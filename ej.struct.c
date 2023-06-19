@@ -12,19 +12,28 @@ struct alumno{
 int main(){
     int n;
     puts("Ingresa cantidad de estudiantes: ");
-    n = getchar();
+    scanf("%d", &n);
     for (int i = 0; i < n; i++){
-        printf("Estudiante %d\n", i+1);
+        printf("\nEstudiante %d\n", i+1);
         puts("Nombre: ");
-        gets(a[i].nombre);
+        fgets(a[i].nombre, 20, stdin);
         puts("direccion: ");
-        gets(a[i].direccion);
+        fgets(a[i].direccion, 20, stdin);
         puts("carrera: ");
-        gets(a[i].carrera);
+        fgets(a[i].carrera, 20, stdin);
         puts("edad: ");
         scanf("%d", &a[i].edad);
         puts("promedio: ");
         scanf("%f", &a[i].promedio);
+    }
+    for (int i = 0; i < n; i++){
+        printf("\n\nEstudiante %d\n", i+1);
+        printf("Nombre: %s", a[i].nombre);
+        printf("direccion: %s", a[i].direccion);
+        printf("carrera: %s", a[i].carrera);
+        printf("edad: %d", a[i].edad);
+        printf("promedio: %f", a[i].promedio);
+        
     }
     
     
