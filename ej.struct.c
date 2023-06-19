@@ -11,29 +11,29 @@ struct alumno{
 
 int main(){
     int n;
-    puts("Ingresa cantidad de estudiantes: ");
+    printf("Ingresa cantidad de estudiantes: ");
     scanf("%d", &n);
     for (int i = 0; i < n; i++){
         printf("\nEstudiante %d\n", i+1);
-        puts("Nombre: ");
-        fgets(a[i].nombre, 20, stdin);
-        puts("direccion: ");
-        fgets(a[i].direccion, 20, stdin);
-        puts("carrera: ");
-        fgets(a[i].carrera, 20, stdin);
-        puts("edad: ");
+        printf("Nombre: ");
+        scanf("%s", a[i].nombre);
+        printf("Direccion: ");
+        scanf("%s", a[i].direccion);
+        printf("Carrera: ");
+        scanf("%s", a[i].carrera);
+        printf("Edad: ");
         scanf("%d", &a[i].edad);
-        puts("promedio: ");
+        printf("Promedio: ");
         scanf("%f", &a[i].promedio);
     }
     for (int i = 0; i < n; i++){
-        printf("\n\nEstudiante %d\n", i+1);
-        printf("Nombre: %s", a[i].nombre);
-        printf("direccion: %s", a[i].direccion);
-        printf("carrera: %s", a[i].carrera);
-        printf("edad: %d", a[i].edad);
-        printf("promedio: %f", a[i].promedio);
-        
+        printf("\nEstudiante %d\n", i+1);
+        printf("Nombre: %s\n", a[i].nombre);
+        printf("direccion: %s\n", a[i].direccion);
+        printf("carrera: %s\n", a[i].carrera);
+        printf("edad: %d\n", a[i].edad);
+        printf("promedio: %f\n", a[i].promedio);
+        printf("\n");
     }
     
     
